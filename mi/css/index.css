@@ -1,1 +1,43 @@
 /*首页的样式*/
+
+/*设置头部导航条的样式*/
+.top-nav{
+    background-color: #333;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.nav-inner{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav-inner a:hover{
+    color: #fff;
+}
+
+.top-nav .sep{
+    color: #424242;
+    margin: 0 .6em;
+}
+
+.link-wrap{
+    display: flex;
+}
+
+.user-info{
+    display: flex;
+}
+.cart{
+    width: 120px;
+    margin-left: 15px;
+    text-align: center;
+    background-color: #424242;
+}
+
+.user-info .cart:hover{
+    color: #ff6700;
+    background-color: #fff;
+}
