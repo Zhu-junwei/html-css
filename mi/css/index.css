@@ -33,25 +33,35 @@
 }
 
 .download-app .hide{
-    display: none;
-    flex-flow: column;
-    align-items: center;
+    /*display: none;*/
     position: absolute;
-    width: 124px;
-    height: 148px;
+    /*height: 148px;*/
+    height: 0;
     background-color: #fff;
     color: #333;
     font-size: 14px;
     z-index: 9999;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     left: -36px;
+
+    transition: height .3s;
+}
+
+.download-app .hide .inner{
+    width: 124px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 .download-app:hover .hide{
-    display: flex;
+    /*display: flex;*/
+    height: 148px;
 }
 
-.download-app .hide::before{
+.download-app:hover .hide::before{
     width: 0;
     height: 0;
     content: "";
