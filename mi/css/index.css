@@ -213,12 +213,13 @@
     display: flex;
     flex-flow: column;
     width: 234px;
-    height: 420px;
+    height: 440px;
     padding: 10px 0;
     background-color: rgba(105,101,101,.6);
     position: absolute;
     left: 0;
     font-size: 14px;
+    z-index: 999;
 }
 
 /*<i class="fa-solid fa-angle-right"></i>*/
@@ -240,4 +241,67 @@
 
 .left-nav a:hover{
     background-color: #ff6700;
+}
+
+.banner{
+    height: 460px;
+    position: relative;
+}
+
+.banner .img-list li{
+    position: absolute;
+}
+
+/*设置翻页*/
+.banner .prev-next a{
+    position: absolute;
+    width: 41px;
+    height: 69px;
+    background-image: url("../images/icon-slides.png");
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.banner .prev-next .prev{
+    left: 234px;
+    background-position: -84px 0;
+}
+
+.banner .prev-next .prev:hover{
+    background-position: 0 0;
+}
+
+.banner .prev-next .next{
+    right: 0;
+    background-position: -125px 0;
+}
+
+.banner .prev-next .next:hover{
+    background-position: -42px 0;
+}
+
+/*设置导航小点*/
+.pointer{
+    display: flex;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+.pointer a{
+    width: 6px;
+    height: 6px;
+    border: 2px hsla(0,0%,100%,.3) solid;
+    background-color: rgba(0,0,0,.4);
+    margin: 0 4px;
+    border-radius: 50%;
+}
+.pointer a:hover,
+.pointer a.active
+{
+    background-clip: content-box;
+    background-color: hsla(0,0%,100%,.4);
+    border-color: rgba(0,0,0,.4);
+
 }
