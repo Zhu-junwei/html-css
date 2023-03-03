@@ -1,4 +1,7 @@
 /*首页的样式*/
+body{
+    height: 2000px;
+}
 
 /*设置头部导航条的样式*/
 .top-nav{
@@ -213,8 +216,8 @@
     display: flex;
     flex-flow: column;
     width: 234px;
-    height: 440px;
-    padding: 10px 0;
+    height: 420px;
+    padding: 20px 0;
     background-color: rgba(105,101,101,.6);
     position: absolute;
     left: 0;
@@ -304,4 +307,94 @@
     background-color: hsla(0,0%,100%,.4);
     border-color: rgba(0,0,0,.4);
 
+}
+
+.sub{
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    margin-top: 14px;
+}
+
+.sub .home-channel-list{
+    display: flex;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    padding: 3px;
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+}
+
+.sub .home-channel-list li{
+    position: relative;
+    width: 76px;
+    height: 82px;
+
+}
+
+/*设置图形的边框 左边框*/
+.sub .home-channel-list li::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: #665e57;
+}
+
+.sub .home-channel-list li::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 64px;
+    background-color: #665e57;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+
+.sub .home-channel-list li a{
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    opacity: .7;
+    transition: opacity .5s;
+}
+.sub .home-channel-list li a:hover{
+    opacity: 1;
+}
+
+
+.sub .home-channel-list li i{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+
+.sub .home-promo{
+    width: 316px;
+    transition: box-shadow .5s;
+}
+
+.sub .home-promo:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+/*设置side-bar的样式*/
+.side-bar{
+    position: fixed;
+    width: 40px;
+    height: 400px;
+    background-color: tomato;
+    top: 200px;
+    left: 50%;
+    margin-left: 613px;
 }
