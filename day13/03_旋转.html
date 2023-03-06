@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>旋转</title>
 
     <style>
         body{
@@ -19,15 +19,26 @@
             margin: 200px auto;
             transition: all 3s;
             /*
-                translateZ 用来设置z轴平移
-                    - z轴平移视觉上会感觉到元素大小的变化
+                transform-origin 指定变形的原点
             */
+            transform-origin: top center;
         }
 
         .box1:hover{
-            /*transform: translateX(100px) translateY(100px) translateZ(500px);*/
-            /*transform: translate(100px, 100px);*/
-            transform: translate3d(100px, 100px, 400px);
+            /*
+                rotateX 沿x轴旋转
+                rotateY 沿y轴旋转
+                rotateZ 沿z轴旋转
+
+                单位：
+                    deg 度
+                    turn 圈
+            */
+            /*transform: rotateX(1turn) rotateY(1turn) rotateZ(10turn);*/
+
+            /*transform: translateX(100px) rotateY(45deg);*/
+            transform:  rotateZ(2turn) ;
+
         }
     </style>
 </head>

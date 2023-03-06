@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>立方体</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            perspective: 800px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .cube{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 200px auto;
+            position: relative;
+            transform: rotateY(45deg);
+            /*开启3d效果*/
+            transform-style: preserve-3d;
+        }
+
+        .cube li{
+            width: 200px;
+            height: 200px;
+            opacity: .6;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+        }
+
+        .cube li:nth-child(1){
+            background-color: tomato;
+            transform: translateZ(100px);
+            z-index: 1;
+        }
+
+        .cube li:nth-child(2){
+            background-color: #bfa;
+        }
+
+        .cube li:nth-child(3){
+            background-color: orange;
+        }
+        .cube li:nth-child(4){
+            background-color: yellowgreen;
+        }
+        .cube li:nth-child(5){
+            background-color: skyblue;
+        }
+        .cube li:nth-child(6){
+            background-color: purple;
+            transform: translateZ(-100px);
+        }
+
+    </style>
+</head>
+<body>
+
+<ul class="cube">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+
+</body>
+</html>
