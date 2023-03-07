@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+
+            animation: move 10s 2s steps(2);
+        }
+
+        @keyframes move {
+            from {
+                margin-left: 50px;
+                background-color: #bfa;
+            }
+
+            50%{
+                margin-left: 200px;
+                background-color: yellow;
+            }
+
+            75%{
+                margin-left: 300px;
+                background-color: yellowgreen;
+            }
+
+            to {
+                margin-left: 500px;
+                background-color: orange;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box1"></div>
+</body>
+</html>
