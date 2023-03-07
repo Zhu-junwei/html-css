@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <title>动画</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
         .box1{
             width: 100px;
             height: 100px;
             background-color: tomato;
+            animation: move 10s 2s steps(2) forwards;
+        /*
+            设置steps时，from第一下不算是一步
+        */
 
-            animation: move 10s 2s steps(2);
         }
 
         @keyframes move {
@@ -18,20 +26,19 @@
                 background-color: #bfa;
             }
 
-            50%{
-                margin-left: 200px;
-                background-color: yellow;
-            }
-
-            75%{
-                margin-left: 300px;
-                background-color: yellowgreen;
-            }
-
             to {
                 margin-left: 500px;
                 background-color: orange;
             }
+        }
+
+        .box2{
+            height: 800px;
+            width: 4px;
+            position: absolute;
+            left: 500px;
+            background-color: red;
+            top: 0;
         }
 
     </style>
@@ -39,5 +46,7 @@
 <body>
 
 <div class="box1"></div>
+
+<div class="box2"></div>
 </body>
 </html>

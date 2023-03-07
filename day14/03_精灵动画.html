@@ -7,8 +7,8 @@
         .box1{
             width: 132px;
             height: 271px;
-            background-image: url("./images/bigtap-mitu-queue-big.png");
-            animation: mitu 3s steps(3) infinite;
+            background-image: url("./images/bigtap-mitu-queue-big2.png");
+            animation: mitu 1s steps(4) infinite;
             /*transition: background-position .3s steps(3);*/
         }
 
@@ -17,14 +17,20 @@
         /*}*/
 
     /*    关键帧*/
+
+        /*
+            0
+            -132
+            -264
+            -396
+        */
         @keyframes mitu {
             from {
                 background-position: 0 0;
             }
 
             to {
-                background-position: -396px 0;
-
+                background-position: -528px 0;
             }
         }
     </style>
