@@ -6,7 +6,7 @@
     将视口的宽度设置为390px
     当一个视口的宽度可以使得像素比变为最佳像素比时，这个视口（宽）就被称为完美视口
 -->
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>移动端</title>
     <style>
         *{
@@ -14,7 +14,7 @@
             padding: 0;
         }
         .box1{
-            width: 390px;
+            width: 100vw;
             height: 200px;
             background-color: tomato;
         }
@@ -89,6 +89,18 @@
                     <meta name="viewport" content="width=device-width"> 可以确保网页在任何设备下都会有一个完美视口！
                     记住！凡是开发需要在移动端中访问的页面，都要加上完美视口
 
+
+    适配问题
+        - 开启完美视口后，任何移动设备都能获得一个最佳的浏览效果
+            但是，这样却导致了不同设备下视口宽度不同
+            同样是390px，在12 pro下是全屏，但到se下就出现了滚动条，到了iPad下就剩下了一半了！
+            这样一来，我们就不能在移动端项目中再使用px作为单位了！
+         - 可以使用vw来解决这个问题，vw - viewport width 视口宽度
+            1vw = 1% 视口宽度
+
+https://lanhuapp.com/link/#/invite?sid=lX00lMna
+分享人: 李立超
+链接有效期: 20230309~20230323
 
 -->
     <div class="box1"></div>
