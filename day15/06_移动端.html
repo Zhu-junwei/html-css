@@ -13,9 +13,33 @@
             margin: 0;
             padding: 0;
         }
+
+        html{
+            /*font-size: 0.13333vw;*/
+
+            /*
+
+                扩展：
+                    - 早期的浏览器，字体大小最小支持到12px,
+                        所以当我们设置一个小于12px的字体时，会被重置为12（0px除外）
+                        现在没有这个问题了
+
+                    - 思考：
+                        - 假设现在这个问题依然存在，那我们要如何处理
+
+            font-size: 2.6666vw;
+
+            */
+            font-size: calc(100vw / 750);
+        }
+
         .box1{
-            width: 100vw;
-            height: 200px;
+            /*width: 91.73vw;*/
+            width: 688rem;
+            height: 91rem;
+
+            /*width: 34.4rem;*/
+            /*height: 4.55rem;*/
             background-color: tomato;
         }
     </style>
@@ -101,6 +125,11 @@
 https://lanhuapp.com/link/#/invite?sid=lX00lMna
 分享人: 李立超
 链接有效期: 20230309~20230323
+
+        - 实际开发中，设计图的宽度都是像素为单位的，有375 750 1125 414 ...
+        - 在将设计图转换为页面时，单位vw
+        - 以750宽的设计图为例 750px = 100vw    1px = 0.1333333vw
+            如何显示 688 x 91 的元素  91.73vw x 12.13vw
 
 -->
     <div class="box1"></div>
