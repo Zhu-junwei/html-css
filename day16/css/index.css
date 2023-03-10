@@ -11,6 +11,7 @@ img{
 a{
     text-decoration: none;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html{
@@ -19,8 +20,69 @@ html{
 }
 
 body{
-    background-color: #333;
+    background: linear-gradient(#FFFFFF 0% , #F4F5F9 78%);
+    /*background: linear-gradient( #F00 0% , #0f0 78%);*/
+    padding-bottom: 100rem;
 }
+
+.menu{
+    width: 414rem;
+    height: 66rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    flex: auto;
+    display: flex;
+    height: 66rem;
+}
+
+.menu li a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #868889;
+    font-size: 22rem;
+}
+.menu li a.active{
+    color: #040404;
+}
+
+.menu .shopping-cart::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 64rem;
+    height: 64rem;
+    border-radius:50% ;
+    bottom: 23rem;
+    right: 31rem;
+}
+
+.menu .shopping-cart a{
+    position: absolute;
+    width: 56rem;
+    height: 56rem;
+    background-color: #6CC51D;
+    border-radius: 50%;
+    color: #fff;
+    bottom: 26rem;
+    right: 35rem;
+}
+
+
+
 
 .search-form{
     width: 380rem;
@@ -66,6 +128,7 @@ body{
 }
 
 .page-hero .img-list li{
+    list-style: none;
     position: absolute;
     width: 100%;
 }
