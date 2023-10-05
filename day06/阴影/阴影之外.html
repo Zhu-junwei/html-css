@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>阴影之外</title>
+    <style>
+        body{
+            background-color: rgb(223, 229, 237);
+        }
+        .box1 {
+            width: 300px;
+            height: 180px;
+            margin: 200px auto;
+            /*border: #f30213 1px solid;*/
+            /**
+               水平偏移 垂直偏移 模糊 扩散 颜色
+             */
+            border-radius: 30px;
+            box-shadow:8px 8px 8px rgba(0,0,0,.4),
+                        -8px -8px 8px rgba(255,255,255,0.7);
+        }
+
+        .box2 {
+            width: 300px;
+            height: 180px;
+            margin: 200px auto;
+            /*border: #f30213 1px solid;*/
+            /**
+               水平偏移 垂直偏移 模糊 扩散 颜色
+             */
+            border-radius: 30px;
+            box-shadow:inset 8px 8px 8px rgba(0,0,0,.4),
+                inset -8px -8px 8px rgba(255,255,255,0.7),
+                -10px -10px 10px rgba(0,0,0,.4);
+        }
+
+        .box3 {
+            width: 180px;
+            height: 180px;
+            border-radius: 90px;
+            margin: 200px auto;
+            /*border: #f30213 1px solid;*/
+            /**
+               水平偏移 垂直偏移 模糊 扩散 颜色
+             */
+            box-shadow:inset 8px 8px 8px rgba(0,0,0,.4),
+            inset -8px -8px 8px rgba(255,255,255,0.7),
+            -10px -10px 10px rgba(0,0,0,.4);
+        }
+
+        .box4 {
+            width: 180px;
+            height: 180px;
+            border-radius: 90px;
+            margin: 200px auto;
+            /*border: #f30213 1px solid;*/
+            /**
+               水平偏移 垂直偏移 模糊 扩散 颜色
+             */
+            box-shadow:inset 30px 30px 30px rgba(0,0,0,.4),
+            inset -30px -30px 30px rgba(255,255,255,0.7),
+            -15px -15px 15px rgba(0,0,0,.4);
+        }
+
+        .box4:hover{
+            /*transform: translateY(-8px) scale(1.01,1.01);*/
+            box-shadow:inset 8px 8px 8px rgba(0,0,0,.4),
+            inset -8px -8px 8px rgba(255,255,255,0.7),
+            -10px -10px 10px rgba(0,0,0,.4);
+        }
+
+        .black {
+            width: 180px;
+            height: 180px;
+            border-radius: 90px;
+            margin: 200px auto;
+            background-color: #333333;
+            /*border: #f30213 1px solid;*/
+            /**
+               水平偏移 垂直偏移 模糊 扩散 颜色
+             */
+            box-shadow:inset 8px 8px 8px rgba(100,100,100,.4),
+            inset -4px -4px 4px rgba(200,200,200,0.7),
+            -10px -10px 10px rgba(0,0,0,.4);
+        }
+
+        .black:hover{
+            transform: translateY(-8px) scale(1.01,1.01);
+            box-shadow:inset 8px 8px 8px rgba(100,100,100,.4),
+            inset -4px -4px 4px rgba(200,200,200,0.7),
+            -15px -15px 15px rgba(0,0,0,.4);
+        }
+
+        .box5 {
+            height: 400px;
+            background-color: rgb(44, 44, 44);
+            position: relative; /* 添加相对定位 */
+        }
+
+        .box6 {
+            width: 180px;
+            height: 180px;
+            border-radius: 90px;
+            position: absolute; /* 绝对定位 */
+            top: 50%; /* 顶部居中 */
+            left: 10%; /* 左侧居中 */
+            transform: translate(-50%, -50%); /* 负外边距居中 */
+            box-shadow:0px 0px 12px rgba(0, 255, 255, .7);
+        }
+
+        .box7 {
+            width: 180px;
+            height: 180px;
+            border-radius: 90px;
+            position: absolute; /* 绝对定位 */
+            top: 50%; /* 顶部居中 */
+            left: 50%; /* 左侧居中 */
+            transform: translate(-50%, -50%); /* 负外边距居中 */
+            box-shadow:50px 0px 0px 0px rgba(255, 255, 0, .7);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="black"></div>
+<div class="box5">
+    <div class="box6"></div>
+    <div class="box7"></div>
+</div>
+</body>
+</html>

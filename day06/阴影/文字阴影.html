@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>文字阴影</title>
+    <style>
+        .div1{
+            text-shadow: 4px 4px 20px #222222;
+            font-size: 30px;
+        }
+
+        .div2{
+            text-shadow: 0 0 6px #000;
+            color: transparent;
+            font-size: 30px;
+        }
+
+        .div3{
+            text-shadow: 1px 1px 0 #ddd,
+                        2px 2px 0 #bbb,
+                        3px 3px 0 #aaa,
+                        4px 4px 0 #999;
+            font-size: 40px;
+        }
+        .div4{
+            text-shadow: 5px 5px 0 #ddd;
+            /*color: transparent;*/
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #333;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<!--设置阴影-->
+<div class="div1">Hello,world</div>
+<!--设置文字模糊-->
+<div class="div2">Hello,world</div>
+<!--等距偏移-->
+<div class="div3">你好，世界</div>
+<!---->
+<div class="div4">你好，世界</div>
+</body>
+</html>

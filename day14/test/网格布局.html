@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>网格布局</title>
+    <style>
+        .outer {
+            width: 800px;
+            border: 5px red solid;
+            display: grid;
+            grid-template-columns: 100px 200px 100px 100px;
+            /*grid-template-columns: 1fr 2fr 1fr 2fr;*/
+            /*grid-template-columns: repeat(2, 1fr 2fr);*/
+            grid-template-rows: 100px;
+
+        }
+
+        .box1 {
+            background-color: #6CC51D;
+        }
+
+        .box2 {
+            background-color: yellow;
+        }
+
+        .box3 {
+            background-color: #0CD4DC;
+        }
+
+        .box4 {
+            background-color: #bbffaa;
+        }
+
+        .box5 {
+            background-color: #AE80FF;
+        }
+
+    </style>
+</head>
+<body>
+<div class="outer">
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box3">box3</div>
+  <div class="box4">box4</div>
+  <div class="box5">box5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉练习</title>
+    <style>
+        .outer {
+            margin-top: 100px;
+            margin-left: 100px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: rgba(43, 45, 48, .6);
+            color: rgba(0, 255, 0, .6);
+            font-size: 2em;
+            font-family: 华文楷体, serif;
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .outer:hover .content {
+            display: block;
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            width: 300px;
+            border: 1px rgba(0, 0, 0, .5) solid;
+            border-radius: 5px;
+            padding-bottom: 20px;
+            /*margin-top: 2px;*/
+            background-color: rgba(43, 45, 48, .1);
+        }
+
+        .content a {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="title">详情</div>
+    <div class="content">隔着屏幕轻易产生感情的你，肯定很孤独吧。
+        <a href="https://hitokoto.cn/" target="_blank">每日一句</a>
+    </div>
+</div>
+</body>
+</html>

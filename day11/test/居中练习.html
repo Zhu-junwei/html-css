@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>居中练习</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            border: 10px red solid;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #fba;
+            margin: 50px auto 0;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            border: 10px red solid;
+            position: relative;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: #fba;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .box5 {
+            width: 200px;
+            height: 200px;
+            border: 10px red solid;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .box6{
+            width: 100px;
+            height: 100px;
+            background-color: #fba;
+            margin: 0 auto;
+        }
+
+        .box7 {
+            width: 200px;
+            height: 200px;
+            border: 10px red solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box8{
+            width: 100px;
+            height: 100px;
+            background-color: #fba;
+        }
+    </style>
+</head>
+<body>
+<!--使用盒子模型-->
+<div class="box1">
+    <div class="box2"></div>
+</div>
+
+<!--使用定位-->
+<div class="box3">
+    <div class="box4"></div>
+</div>
+
+<!--使用表格-->
+<div class="box5">
+    <div class="box6"></div>
+</div>
+
+<!--使用弹性盒-->
+<div class="box7">
+    <div class="box8"></div>
+</div>
+</body>
+</html>

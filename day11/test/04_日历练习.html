@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>日历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .date-nav {
+            margin: 20px auto;
+            width: 410px;
+            height: 586px;
+            background-color: rgb(43, 43, 43);
+            border-radius: 5px;
+        }
+
+        .date-info {
+            width: 100%;
+            height: 86px;
+            /*background-color: rgb(43, 43, 43);*/
+            background-color: #b0b0b0;
+            color: white;
+            border-radius: 5px 5px 0 0;
+            font-size: 18px;
+        }
+
+        .date-info > div {
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="date-nav">
+    <div class="date-info">
+        <div>9月18日,星期一</div>
+        <div>八月初四</div>
+    </div>
+    <div class="date-main">
+        <div class="date-select">
+            <div>2023年9月</div>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div>日</div>
+                    <div>一</div>
+                    <div>二</div>
+                    <div>三</div>
+                    <div>四</div>
+                    <div>五</div>
+                    <div>六</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>27</div>
+                    <div>十二</div>
+                </td>
+                <td>
+                    <div>28</div>
+                    <div>十三</div>
+                </td>
+                <td>
+                    <div>29</div>
+                    <div>十四</div>
+                </td>
+                <td>
+                    <div>30</div>
+                    <div>十五</div>
+                </td>
+                <td>
+                    <div>31</div>
+                    <div>十六</div>
+                </td>
+                <td>
+                    <div>1</div>
+                    <div>十七</div>
+                </td>
+                <td>
+                    <div>2</div>
+                    <div>十八</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>3</div>
+                    <div>十九</div>
+                </td>
+                <td>
+                    <div>4</div>
+                    <div>二十</div>
+                </td>
+                <td>
+                    <div>5</div>
+                    <div>廿一</div>
+                </td>
+                <td>
+                    <div>6</div>
+                    <div>廿二</div>
+                </td>
+                <td>
+                    <div>7</div>
+                    <div>廿三</div>
+                </td>
+                <td>
+                    <div>8</div>
+                    <div>白露</div>
+                </td>
+                <td>
+                    <div>9</div>
+                    <div>廿五</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>10</div>
+                    <div>廿六</div>
+                </td>
+                <td>
+                    <div>11</div>
+                    <div>廿七</div>
+                </td>
+                <td>
+                    <div>12</div>
+                    <div>廿八</div>
+                </td>
+                <td>
+                    <div>13</div>
+                    <div>廿九</div>
+                </td>
+                <td>
+                    <div>14</div>
+                    <div>三十</div>
+                </td>
+                <td>
+                    <div>15</div>
+                    <div>八月</div>
+                </td>
+                <td>
+                    <div>16</div>
+                    <div>初二</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>17</div>
+                    <div>初三</div>
+                </td>
+                <td>
+                    <div>18</div>
+                    <div>初四</div>
+                </td>
+                <td>
+                    <div>19</div>
+                    <div>初五</div>
+                </td>
+                <td>
+                    <div>20</div>
+                    <div>初六</div>
+                </td>
+                <td>
+                    <div>21</div>
+                    <div>初七</div>
+                </td>
+                <td>
+                    <div>22</div>
+                    <div>初八</div>
+                </td>
+                <td>
+                    <div>23</div>
+                    <div>秋分</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>24</div>
+                    <div>初十</div>
+                </td>
+                <td>
+                    <div>25</div>
+                    <div>十一</div>
+                </td>
+                <td>
+                    <div>26</div>
+                    <div>十二</div>
+                </td>
+                <td>
+                    <div>27</div>
+                    <div>十三</div>
+                </td>
+                <td>
+                    <div>28</div>
+                    <div>十四</div>
+                </td>
+                <td>
+                    <div>29</div>
+                    <div>中秋节</div>
+                </td>
+                <td>
+                    <div>30</div>
+                    <div>十六</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>1</div>
+                    <div>十七</div>
+                </td>
+                <td>
+                    <div>2</div>
+                    <div>十八</div>
+                </td>
+                <td>
+                    <div>3</div>
+                    <div>十九</div>
+                </td>
+                <td>
+                    <div>4</div>
+                    <div>二十</div>
+                </td>
+                <td>
+                    <div>5</div>
+                    <div>廿一</div>
+                </td>
+                <td>
+                    <div>6</div>
+                    <div>廿二</div>
+                </td>
+                <td>
+                    <div>7</div>
+                    <div>廿三</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="focus">
+        <div>-</div>
+        <div>30分钟</div>
+        <div>+</div>
+        <div>开始专注</div>
+    </div>
+
+</div>
+
+</body>
+</html>

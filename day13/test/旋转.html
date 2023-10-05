@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转</title>
+    <style>
+
+        body {
+            /*perspective: 500px;*/
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: rgba(255,0,0,.7 );
+            transition: transform 1s;
+            transform-origin: left;
+        }
+
+        .box1:hover {
+            /*transform: rotateX(45deg);*/
+            transform: rotateY(45deg);
+            /*transform: rotateZ(180deg);*/
+
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

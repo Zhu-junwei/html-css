@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            width: 800px;
+            height: 100px;
+            list-style: none;
+            border: 10px red solid;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        ul li{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 50px;
+            color: yellow;
+            background-color: #0CD4DC;
+            outline: 10px yellow solid;
+            flex-basis: auto;
+        }
+
+        ul li:first-child {
+        }
+
+        ul li:nth-child(2) {
+            /*flex-basis: 0;*/
+        }
+
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<div class="box1">
+    <div class="box2"></div>
+</div>
+</body>
+</html>
