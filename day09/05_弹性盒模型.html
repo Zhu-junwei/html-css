@@ -66,10 +66,15 @@
                        start 元素靠侧轴的起始位置对齐
                        end 元素靠侧轴的结束位置对齐
                        center 元素在侧轴上居中对齐
-                align-content 设置元素在侧轴上空白空间的分配
-                        space-between 将侧轴方向空白位置分配到两个元素之间
-                        space-around 将侧轴方向空白位置分配到元素周围
-                        space-evenly 将侧轴方向的空白分配到元素的一侧
+                align-content 修改 flex-wrap 属性的行为，类似 align-items, 但不是设置子元素对齐，而是设置行对齐，
+                              即align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
+                             （可以将其视为多行情形下的align-items属性）
+                        flex-start：子元素按照交叉轴的起点对齐。
+                        flex-end：子元素按照交叉轴的终点对齐。
+                        center：子元素按照交叉轴的中点对齐。
+                        space-between：子元素按照交叉轴两端对齐，轴线之间的间隔平均分布。
+                        space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
+                        stretch（默认值）：轴线占满整个交叉轴。
 
 
                 元素居中的方式：
