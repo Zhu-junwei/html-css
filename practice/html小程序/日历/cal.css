@@ -1,0 +1,32 @@
+/*******日历*************/
+
+.CalTitle{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.CalDayHeader{
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.CalWeekendDay{
+    font-size:16px;
+    line-height:2.1;
+}
+
+/*存在随笔的日期*/
+#blog-calendar  u{
+    color:#b62525;
+    font-weight:600;
+    text-decoration:none!important;
+}
+
+/*今天*/
+.CalTodayDay{
+    background-color:#69af46;
+    color:blue;
+    border-radius:50%;
+}
